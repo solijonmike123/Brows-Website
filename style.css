@@ -153,12 +153,13 @@ a {
 
 .sticky-book-btn {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
+  right: 16px;
+  bottom: 16px;
   z-index: 1000;
   background: linear-gradient(135deg, rgba(255,255,255,0.72), rgba(243, 220, 218, 0.78));
   color: var(--primary-dark);
   box-shadow: 0 12px 24px rgba(201, 124, 125, 0.22);
+  max-width: calc(100vw - 32px);
 }
 
 .nav-btn:hover,
@@ -662,6 +663,15 @@ footer {
     width: 100%;
     text-align: center;
     padding: 12px 16px;
+  }
+
+  .sticky-book-btn {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 12px;
+    width: min(88vw, 220px);
+    padding: 11px 14px;
   }
 
   .highlights {
