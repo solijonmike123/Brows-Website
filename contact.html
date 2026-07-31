@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | queennelashes.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">queennelashes.com</a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services & Pricing</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </div>
+      <a class="nav-btn" href="contact.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section contact-page">
+      <div class="section-title">
+        <p class="eyebrow">Book your appointment</p>
+        <h2>Ready for your glow-up?</h2>
+      </div>
+
+      <div class="contact-box">
+        <a href="tel:+1234567890">Call or Text: (123) 456-7890</a>
+        <a href="mailto:solijonmikelennard@gmail.com">solijonmikelennard@gmail.com</a>
+
+        <div class="location-card">
+          <h3>Our Location</h3>
+          <p>Right across from the Elementary School in Aliguay, Maribojoc</p>
+          <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!4v1785459283282!6m8!1m7!1sdAc0cr4uyW93W-vm2dtZZA!2m2!1d9.740920288751152!2d123.8672535217732!3f135.52835523759614!4f-4.611743624522944!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <a class="map-link" href="https://maps.google.com/?q=Aliguay+Maribojoc" target="_blank" rel="noopener noreferrer">
+            Open in Google Maps
+          </a>
+        </div>
+
+        <form class="booking-form" action="https://formsubmit.co/3913215b5c4a1a7bc0453c391ed394f3" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" id="confirmationAccept" name="confirmation_accept" />
+          <input type="hidden" id="confirmationDecline" name="confirmation_decline" />
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </label>
+
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+          </label>
+
+          <label>
+            Service Needed
+            <select name="service">
+              <option>Eyebrow Extension</option>
+              <option>Lash Lift</option>
+              <option>Volume Lashes</option>
+              <option>Classic Lashes</option>
+            </select>
+          </label>
+
+          <label>
+            Home Service?
+            <select name="home_service">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred Date
+            <input type="date" name="date" />
+          </label>
+
+          <label>
+            Preferred Time
+            <select id="timeSelect" name="time">
+              <option value="">Choose a date first</option>
+            </select>
+          </label>
+
+          <div id="availabilityMessage" class="availability-message">
+            Select a date to see available times.
+          </div>
+
+          <div id="confirmationMessage" class="confirmation-message" hidden>
+            Thank you! Your booking request has been received. We will contact you soon.
+          </div>
+
+          <label>
+            Additional Details
+            <textarea name="details" rows="4" placeholder="Tell us about your preferred style or any questions."></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Request Booking</button>
+
+          <div id="confirmationActions" class="confirmation-actions" hidden>
+            <button class="btn secondary" type="button" id="sendConfirmBtn">Send confirmation email</button>
+            <button class="btn secondary" type="button" id="sendDeclineBtn">Send decline email</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> queennelashes.com. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
